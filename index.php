@@ -25,6 +25,10 @@ $censure = str_replace($word, '***', $text);
 </head>
 
 <body>
+    <form action="" method="GET">
+        <input type="text" name="word" placeholder="Inserisci una parola da censurare..">
+        <button>Censura</button>
+    </form>
     <h1> <?php echo $censure . '<br>' . " Il Paragrafo è composto da: " .  strlen($censure) . ' caratteri' ?> </h1>
 </body>
 
